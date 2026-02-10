@@ -165,7 +165,7 @@ nav a.active {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 20px; /* Added margin for spacing */
 }
 #submit-quiz:hover {
     background-color: #005f73;
@@ -173,6 +173,12 @@ nav a.active {
 #quiz-results {
     margin-top: 20px;
     font-size: 1.1rem;
+}
+.quiz-question {
+    margin-bottom: 20px; /* Spacing between questions */
+}
+.quiz-question:last-child {
+    margin-bottom: 0;
 }
 .quiz-question textarea {
     width: 98%;
@@ -184,26 +190,14 @@ nav a.active {
 }
 .correct {
     color: green;
+    font-weight: bold;
 }
 .incorrect {
     color: red;
+    font-weight: bold;
 }
 #quiz-results hr {
     border: 0;
     border-top: 1px solid #eee;
     margin: 20px 0;
-}
-
-
-/* 資源 */
-#resources ul {
-    list-style-type: none;
-    padding: 0;
-}
-#resources li a {
-    text-decoration: none;
-    color: #005f73;
-}
-#resources li a:hover {
-    text-decoration: underline;
 }
